@@ -1,0 +1,17 @@
+h1. Is it CodeMash yet?
+
+CodeMash is an annual conference held in January at the Kalahari Resort & Water Park in Sandusky, Ohio. It is one of the few conferences where attendees can see sessions on "iPhone development":http://www.codemash.org/Sessions#How+Do+You+Do+That+on+iPhone%3f, "Python evangelism":http://www.codemash.org/Sessions#Getting+Snakes+on+Your+Monday-to-Friday+Plane%3a+Strategies+for+Python+Evangelism+and+Adoption, "dynamic programming in C#":http://www.codemash.org/Sessions#Going+Dynamic+with+C%23, "using the Tapestry web framework in Java":http://www.codemash.org/Sessions#Tapestry+5%3a+Java+Power%2c+Scripting+Ease, and "much more":http://www.codemash.org/Sessions. Every year there is quite a bit of excitement around this conference, just try "searching for #codemash":http://search.twitter.com/search?q=%23codemash on Twitter!
+
+Last year to help this excitement, I built a countdown site using the Sinatra web framework for Ruby (see the "screencast on how it works":http://vimeo.com/2374819). Over the past year I've become fond of the idea of using the Rack library to build web applications without a framework. I combined this with the spirit of learning brought about by CodeMash to rewrite the Is it CodeMash yet? site directly on top of Rack, without a web framework helping me.
+
+h3. How does it work?
+
+I won't go into a detailed explanation of Rack here; if you want that check out the Rack "specification":http://rack.rubyforge.org/doc/SPEC.html and "documentation":http://rack.rubyforge.org/doc/. The file application.rb drives the web app. Its sole responsiblity is to render the view (for more details check out "defunkt's":http://www.github.com/defunkt logic-free "Mustache":http://www.github.com/defunkt/mustache). The view uses the CodeMashCalculator object to determine if it's currently CodeMash and the number of days left until the conference starts.
+
+h3. Developing
+
+Obviously, this is a pretty basic application. My only planned addition at the moment is to add the Twitter search results for #codemash to the page background. If you have any ideas you would like to see, feel free to fork away make your changes. I will accept pull requests at my discretion.
+
+To develop on the site you will need to install "wycat's":http://yehudakatz.com "RubyGems Bundler":http://github.com/wycats/bundler. If you haven't used Bundler, be sure to check out "Nick Quaranto's guide":http://litanyagainstfear.com/blog/2009/10/14/gem-bundler-is-the-future/. Make sure you add any gem dependencies to the Gemfile manifest.
+
+If you have any questions on adding to the app (even if it's "how do I use GitHub"), feel free to "contact me":http://www.joefiorini.com and I'll do my best to help you out.
