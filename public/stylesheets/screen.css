@@ -1,0 +1,57 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border:0 none;
+  font-family:inherit;
+  font-size:100%;
+  font-style:inherit;
+  font-weight:inherit;
+  margin:0;
+  outline-color:-moz-use-text-color;
+  outline-style:none;
+  outline-width:0;
+  padding:0;
+  vertical-align:baseline;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  color: #FF8000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+div#codemashlogo {
+  margin-top: 10%;
+  text-align: center;
+}
+
+img {
+  border: 0;
+}
+
+#branding {
+  bottom: 0%
+  padding: 0;
+  margin: 0;
+}
+
+#branding #logo {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+}
+#branding #name {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  text-align: right;
+}
