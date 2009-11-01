@@ -7,6 +7,10 @@ class CodeMashCalculator
     @end_date = CODEMASH_DATE
   end
 
+  def days_until_codemash
+    CODEMASH_DATE.first - @comparison_date
+  end
+
   def is_it_codemash_yet?
     CODEMASH_DATE.include?(@comparison_date)
   end

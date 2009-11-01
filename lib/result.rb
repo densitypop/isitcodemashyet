@@ -8,6 +8,18 @@ class Result < Mustache
     @calculator = CodeMashCalculator.new(Date.today)
   end
 
+  def days_until_codemash
+    its_on = @calculator.is_it_codemash_yet?
+    days_left = @calculator.days_until_codemash
+    if its_on
+      "It's on right now!"
+    elsif days_left < 0
+      "It's over! Come back soon for next year."
+    else
+      "But only %s days left!" % days_left
+    end
+  end
+
   def result
     if @calculator.is_it_codemash_yet?
        "Yes"
