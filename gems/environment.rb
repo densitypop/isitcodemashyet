@@ -8,6 +8,8 @@ module Bundler
 
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/mustache-0.4.2/bin")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/mustache-0.4.2/lib")
+  $LOAD_PATH.unshift File.expand_path("#{dir}/gems/shoulda-2.10.2/bin")
+  $LOAD_PATH.unshift File.expand_path("#{dir}/gems/shoulda-2.10.2/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/rack-1.0.1/bin")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/rack-1.0.1/lib")
 
@@ -18,6 +20,8 @@ module Bundler
   @bundled_specs = {}
   @bundled_specs["mustache"] = eval(File.read("#{dir}/specifications/mustache-0.4.2.gemspec"))
   @bundled_specs["mustache"].loaded_from = "#{dir}/specifications/mustache-0.4.2.gemspec"
+  @bundled_specs["shoulda"] = eval(File.read("#{dir}/specifications/shoulda-2.10.2.gemspec"))
+  @bundled_specs["shoulda"].loaded_from = "#{dir}/specifications/shoulda-2.10.2.gemspec"
   @bundled_specs["rack"] = eval(File.read("#{dir}/specifications/rack-1.0.1.gemspec"))
   @bundled_specs["rack"].loaded_from = "#{dir}/specifications/rack-1.0.1.gemspec"
 
