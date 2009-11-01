@@ -1,4 +1,6 @@
 require 'lib/code_mash_calculator'
+require 'lib/result'
+require 'mustache'
 
 class Application
 
@@ -7,11 +9,6 @@ class Application
   end
 
   def call(environment)
-    result = if @calculator.is_it_codemash_yet?
-               "Yes"
-             else
-               "No"
-             end
-    [200, {"Content-Type" => "text/html"}, result]
+    [200, {"Content-Type" => "text/html"}, Result.render]
   end
 end
