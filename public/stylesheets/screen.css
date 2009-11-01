@@ -12,12 +12,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align:baseline;
 }
 
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
 h1 {
+  font-family: georgia, times, serif;
   font-size: 4em;
   text-align: center;
 }
 
-h2 {
+em {
+  display:block;
+  padding-top: 1em;
+  font-size: 1.2em;
   text-align: center;
 }
 
