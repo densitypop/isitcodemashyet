@@ -3,5 +3,5 @@ require 'gems/environment'
 require 'rack'
 require 'application'
 
-use Rack::Static, :urls => ["/stylesheets", "/images"], :root => "public"
+use Rack::Static, :urls => ["/stylesheets", "/images", "/javascripts"], :root => "public"
 run Application.new

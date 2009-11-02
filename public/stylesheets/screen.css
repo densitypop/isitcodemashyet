@@ -63,3 +63,23 @@ img {
   bottom: 0%;
   text-align: right;
 }
+
+div#tweets_layer {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: -1;
+}
+
+ul#tweets {
+  text-align: center;
+  list-style-type: none;
+}
+
+ul#tweets li {
+  padding-bottom: 20px;
+  color: #bdeaf5;
+  font-family: georgia;
+  font-weight: normal;
+}
+
