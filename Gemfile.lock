@@ -1,0 +1,14 @@
+GEM
+  remote: http://gemcutter.org/
+  specs:
+    mustache (0.11.2)
+    rack (1.2.1)
+    shoulda (2.11.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mustache
+  rack
+  shoulda
