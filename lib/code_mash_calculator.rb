@@ -1,4 +1,4 @@
-CODEMASH_DATE = (Date.parse("1/13/2010")..Date.parse("1/15/2010"))
+CODEMASH_DATE = (Date.parse("1/12/2011")..Date.parse("1/14/2011"))
 
 class CodeMashCalculator
 
