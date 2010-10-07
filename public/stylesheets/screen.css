@@ -13,11 +13,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: georgia, 'Times New Roman', serif;
 }
 
 h1 {
-  font-family: georgia, times, serif;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
   font-size: 4em;
   text-align: center;
 }
@@ -30,7 +31,7 @@ em {
 }
 
 a {
-  color: #FF8000;
+  color: #0084A4;
 }
 
 a:hover {
@@ -40,6 +41,7 @@ a:hover {
 div#codemashlogo {
   margin-top: 10%;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 img {
@@ -54,13 +56,13 @@ img {
 
 #branding #logo {
   position: absolute;
-  left: 0%;
-  bottom: 0%;
+  left: 1%;
+  bottom: 1%;
 }
 #branding #name {
   position: absolute;
-  right: 0%;
-  bottom: 0%;
+  right: 1%;
+  bottom: 1%;
   text-align: right;
 }
 
